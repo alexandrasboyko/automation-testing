@@ -1,1 +1,5 @@
-var a = 20;
+function ffff () {
+    console.log ("privet")
+}
+
+ffff();
