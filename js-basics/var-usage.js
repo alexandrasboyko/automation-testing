@@ -1,9 +1,6 @@
-
-const Gir=
-{
-    drow_lips: function (){
-        console.log ("девушка красит губы")
+const Sasha = {
+    learn: function(){
+ console.log("ya uchu JS")
     }
 }
-
-Gir.drow_lips()
+Sasha.learn()
