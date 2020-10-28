@@ -1,5 +1,9 @@
-function ffff () {
-    console.log ("privet")
+
+const Gir=
+{
+    drow_lips: function (){
+        console.log ("девушка красит губы")
+    }
 }
 
-ffff();
+Gir.drow_lips()
