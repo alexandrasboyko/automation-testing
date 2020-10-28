@@ -1,6 +1,8 @@
-const Sasha = {
-    learn: function(){
- console.log("ya uchu JS")
-    }
+const Numbers={
+    one:2,
+    two:3
 }
-Sasha.learn()
+function sum (a,b){
+    console.log ("sum=", a+b)
+}
+sum(Numbers.one, Numbers.two)
