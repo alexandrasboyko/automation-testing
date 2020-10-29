@@ -1,16 +1,16 @@
-const Pa ={
-    child: {
-        run: function(){
-        console.log("run")
-    },
-        jump: function(){
-        console.log("jump")
-    },
-        walk: function () {
-    console.log("walk")
+const papa = {
+  walk: function () {
+    console.log("гулять");
+  },
+};
+const children = {
+  run: function () {
+    console.log("бегать");
+  },
+};
+
+function rez(walk) {
+  walk.walk();
 }
-}
-}
-Pa.child.jump()
-Pa.child.run()
-Pa.child.walk()
+
+rez(papa);
