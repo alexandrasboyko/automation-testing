@@ -1,18 +1,16 @@
-const Numbers={
-    one:2,
-    two:3
+const Pa ={
+    child: {
+        run: function(){
+        console.log("run")
+    },
+        jump: function(){
+        console.log("jump")
+    },
+        walk: function () {
+    console.log("walk")
 }
-function sum (a,b){
-    console.log ("sum=", a+b)
 }
-sum(Numbers.one, Numbers.two)
-
-const BB= {
-    a:1,
-    b:11,
-    c:10
 }
-function Sum (a,b,c){
-console.log("sum=", a+b+c)
-}
-Sum(BB.a,BB.b,BB.c)
+Pa.child.jump()
+Pa.child.run()
+Pa.child.walk()
