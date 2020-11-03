@@ -9,7 +9,7 @@ rl.question('В каком году была опубликована специ
 
   console.log(` ${year}`);
 
-  if (year < 2015) {
+  if (year==ECMAScript) {
    console.log ('Это слишком рано...' );
   } else if (year > 2015) {
     console.log( 'Это поздновато' );
