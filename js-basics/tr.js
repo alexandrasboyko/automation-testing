@@ -5,9 +5,15 @@ const rll = readline.createInterface({
   output: process.stdout,
 });
 
-rll.question("Введите число? ", (x) => {
+rll.question("ВВедите число",(a, b) =>{
 
-let mes=x>0? `1`: x<0? "-1" : x=0? "0": "значит вы ввели 0" 
-    console.log("ответ", mes);
-rll.close ()
+let x= a+b < 4 ? ("malo") : ("mnogo"); 
+console.log("x=",x)
+
+rll.close()
 })
+//if (a + b < 4) {
+  //result = 'Мало';
+//} else {
+  //result = 'Много';
+//}
