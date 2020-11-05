@@ -1,17 +1,7 @@
-const { create } = require("domain");
-const { stdin, stdout } = require("process");
-const readline=require("readline")
-const rll=readline.createInterface({
-    input:stdin,
-    output:stdout,
-});
+let age = 14;
 
-rll.question("какое название JS? ", (x) => {
-  
-  if (x == "ecmascript") {
-    console.log("verno");
-  } else {
-    console.log("neverno", x);
-  }
-  rll.close();
-});
+if (!(14 <= age && age <=90)) {
+    console.log(age, "НЕ в диапазоне от 14 до 90");
+}
+else {console.log(age," в диапазоне")}
+
