@@ -12,8 +12,8 @@
 //console.log(num++)//+1 запоминается и записывается в следующем действии
 //console.log(++num)//+1 сразу выводится
 //console.log(num)
-//console.log(--num)
-//c+=num
+//console.log(--num)-1
+//c+=num c=c+num
 //c-=num
 //c*=num
 //c/=num

@@ -1,17 +1,17 @@
 // 10 МАССИВЫ [ARRAY]
 
-//const cars =[ "Volvo", "BMW", "Kia"]
-//console.log(cars[1]) //----> обращение к отдельному элементу
-//console.log(cars.length) // ---> Длина (сколько элементов) массива
-//console.log(cars)
+const cars =[ "Volvo", "BMW", "Kia"]
+console.log(cars[1]) //----> обращение к отдельному элементу
+console.log(cars.length) // ---> Длина (сколько элементов) массива
+console.log(cars)
 //cars[1]="Mazda"
 //console.log(cars[1])
-// cars[3] = "BMW"
-// console.log(cars)
+//cars[3] = "BMW"
+//console.log(cars)
 //const cars =[ "Volvo", "BMW", "Kia", "Porshe", "Reno"]
 
-//for (i=0; i<cars.length;i++) {
-//console.log(i)}
+for (i=0; i<cars.length;i++) {
+console.log(i)}
 
 //for (i=0; i<cars.length;i++) { -----> создаем цикл, обращение к элементам в цикле, работаем с каждым элементом через его индекс
 //const car=cars
