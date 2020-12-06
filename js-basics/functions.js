@@ -47,8 +47,22 @@ return(" lastname "+ lastName+ fullInfo )}
 
 function resume2(lastName, name, year, prof, sex, nation, language){
 const lang= resume(lastName, name, year, prof, sex, nation)
-console.log(lang+", language "+language )}
+return(lang+", language "+language )}
 resume2("Boiko", "Sasha", 1996, "creator", "female", "ukrainian", "russian")
+
+function resume3 (lastName, name, year, prof, sex,nation, language, hobby ) {
+const resHobby=resume2(lastName, name, year, prof, sex,nation, language)
+return(resHobby+", hobby"+hobby)
+}
+
+function resume4 (lastName, name, year, prof, sex, nation, language, hobby, telephone){
+const tel=resume3(lastName, name, year, prof, sex, nation, language, hobby)
+console.log(tel+", telephone"+telephone)}
+resume4("Boiko", "Sasha", 1996, "CD", "fem", "ukr", "rus", " art", " 1000000")
+
+
+
+
 
 //function study(discipline) {
  // return (discipline = ++discipline);
@@ -66,18 +80,17 @@ resume2("Boiko", "Sasha", 1996, "creator", "female", "ukrainian", "russian")
 // function currentDay(day) {
 //   return (day = 7 - day);
 // }
- function week(day, Weekends = [6, 7]) {
- const weekendDays = [...Weekends].sort(); 
- const dayInWeekend = weekendDays.indexOf(day) + 1;
- if (dayInWeekend > 0) {
-   console.log(
-     "Сегодня " + day + " день недели " + ", а это значит " + dayInWeekend + " выходной"
-   );
- } else {
-   console.log("Weekdays");
- }
-}
- week( 4, [6,7,2]);
-
+//  function week(day, Weekends = [6, 7]) {
+//  const weekendDays = [...Weekends].sort(); 
+//  const dayInWeekend = weekendDays.indexOf(day) + 1;
+//  if (dayInWeekend > 0) {
+//    console.log(
+//      "Сегодня " + day + " день недели " + ", а это значит " + dayInWeekend + " выходной"
+//    );
+//  } else {
+//    console.log("Weekdays");
+//  }
+// }
+ //week( 4, [6,7,2]);
 
 
