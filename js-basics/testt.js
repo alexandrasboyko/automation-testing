@@ -26,7 +26,7 @@ function createNewPupilGirl(age, name, lastName, address, language) {
 function createNewPupilBoy(age, name, lastName, address, language) {
   return {
     age,
-    name,
+    name: name,
     //lastName,
     //address,
     language,
