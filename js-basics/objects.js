@@ -1,4 +1,4 @@
-// // 11 Объекты
+// // // 11 Объекты
 
 // const lang = ["Java", "JS", "Delphi"];
 // let progLang;
@@ -34,34 +34,34 @@
 
 // Person.job(progLang);
 
-let bornYear=1996
-yearCurr=2020
-const person = {
-  name: "Sasha",
-  lastName : "Boiko",
-  age: function (yearCurr,bornYear){
-   return yearCurr-bornYear
-  } ,
-  sex: "female",
-  prof: "CD",
-  nationality: "ukr",
-  languages: ["rus", "ukr", "md"],
-  child: true
-}
+// let bornYear=1996
+// yearCurr=2020
+// const person = {
+//   name: "Sasha",
+//   lastName : "Boiko",
+//   age: function (yearCurr,bornYear){
+//    return yearCurr-bornYear
+//   } ,
+//   sex: "female",
+//   prof: "CD",
+//   nationality: "ukr",
+//   languages: ["rus", "ukr", "md"],
+//   child: true
+// }
 
-person.age(2020,1996)
-console.log(person)
-const name=`my name: ${person.name}`
+// person.age(2020,1996)
+// console.log(person)
+// const name=`my name: ${person.name}`
 
-console.log(name)
+// console.log()
 
 
-console.log(Number.isNaN(1996))
-console.log(Math.pow(5, 3))
-console.log(isFinite(isFinite))
-const stringInt="40"
-console.log(+stringInt+2)
-console.log(+(0.4+0.2).toFixed(1))
-console.log(Math.max(2,4,6))
+// console.log(Number.isNaN(1996))
+// console.log(Math.pow(5, 3))
+// console.log(isFinite(isFinite))
+// const stringInt="40"
+// console.log(+stringInt+2)
+// console.log(+(0.4+0.2).toFixed(1))
+// console.log(Math.max(2,4,6))
 
-console.log(Math.random())
+// console.log(Math.random())

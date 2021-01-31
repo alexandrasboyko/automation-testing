@@ -49,10 +49,12 @@ function chekGender(childName) {
   class_A11.push(expectedPupil);
 }
 
-children.forEach(chekGender);
+ children.forEach(chekGender);
 console.log("Klass: ", class_A11);
+
 const boysFromClass_11_A = class_A11.filter(function (pupilObject) {
-  console.log(pupilObject.sex, pupilObject.sex === "M");
+  console.log(
+      pupilObject.sex, pupilObject.sex === "M");
   return pupilObject.sex === "M";
 });
 console.log(boysFromClass_11_A);
