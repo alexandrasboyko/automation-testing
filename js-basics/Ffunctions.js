@@ -124,7 +124,8 @@ function createObjectInterface() {
       Object.assign(newObject, { second_Name: secname });
     },
     newObject() {
-      return `${     newObject.first_name ? newObject.first_name  : ""}  ${newObject. second_Name? newObject.second_Name: "" }`;
+      return `${ newObject.first_name ? newObject.first_name  : ""} 
+       ${newObject. second_Name? newObject.second_Name: "" }`;
     },
   };
 }
@@ -132,3 +133,4 @@ const person = createObjectInterface();
 person.createName("Ivan")
 person.createSecName("Ivanov")
 console.log(person.newObject())
+
