@@ -81,9 +81,14 @@ console.log(string.slice(-8, -3))
 console.log("substring > " + string.substring(4, 8))
 // console.log("substring > " + string.substring(-4, 9))_________________________________________
 string = "string1"
-string[0] = "S" //не работает
-console.log(" !!!! "+ string[0])
-console.log("string2".codePointAt(5))
-console.log(string.codePointAt(5))
-console.log(String.fromCodePoint(90))
+string[3] = "S" //не работает 
+string = string + "S" //первый и последний элемент в строке можно изменить через конкатинацию
+string = string.slice(1, string.length-3)
+console.log(string)
+
+// console.log(" !!!! "+ string[0])//
+
+// console.log("string2".codePointAt(5))
+// console.log(string.codePointAt(5))//
+// console.log(String.fromCodePoint(90))// 
 
