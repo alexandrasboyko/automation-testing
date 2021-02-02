@@ -41,5 +41,23 @@ console.log(ARR.splice(ARR.length-1, 1))
 let a= "string"
 console.log(a.slice(0, a.length-1))
 
-console.log(ARR.filter()
+const c = ARR.findIndex(function (val, ind){
+ return val==="3"
+
+}
+)
+console.log(c);
+ let r =ARR.slice(-3, -1)
+ console.log(r)
+ console.log(ARR)
+
+ const user = function (){
+    const holder= {}
+     function (data){
+     data.
+     }
+ }
+
+ function 
+
 

@@ -215,6 +215,15 @@
 //     }
 //   }
 // }
+function countUniqSymb( str){
+  const splited = str.split("")
+  let holder;
+  for (i=0; i <splited.length; i++){ 
+  if (holder !== splited[i]){
+    holder = splited[i]
+    console.log(splited[i], str.split(splited[i]). length-1)
+  }}
+}
 
 // countUniqSymbols('hello');
 
