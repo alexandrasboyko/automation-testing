@@ -134,3 +134,5 @@ person.createName("Ivan")
 person.createSecName("Ivanov")
 console.log(person.newObject())
 
+
+f

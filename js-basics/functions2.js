@@ -51,13 +51,8 @@ console.log(c);
  console.log(r)
  console.log(ARR)
 
- const user = function (){
-    const holder= {}
-     function (data){
-     data.
-     }
- }
 
- function 
+
+
 
 
