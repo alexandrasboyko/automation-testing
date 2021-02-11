@@ -137,4 +137,26 @@ const ar2 = [ 2, 3, 4];
 // }
 // })
 
+// function find_ele(pole) {
+//   const a = arr.some(function (obj) {
+//     return obj.price === pole;
+//   });
+// return a
+// }
+
+// console.log(find_ele(30));
+
+// const neww = arr.some(function (obj) {
+//   return obj.price === 30;
+// });
+// console.log(neww);
+
+// function metod(val) {
+//   const find_number = arr.some(function (obj) {
+//     if (val) console.log(obj.pole === val);
+//     obj.pole === val;
+//   });
+//   return find_number;
+// }
+// console.log(metod(10));
 
