@@ -4,13 +4,12 @@ tovar_properties = ["name", "size", "price"];
 function add_new_tovar(ed_tovara) {
   const keys_of_tovar = Object.keys(ed_tovara);
 
-  keys_of_tovar.forEach(function (key) {
+  return keys_of_tovar.some(function (key) {
     if (!tovar_properties.includes(key)) {
       throw new Error(`${ed_tovara} не соответствует допустимым свойствам`);
-    }
-  });
+    } else console.log('товар добавлен')
   arr_of_tovar.push(ed_tovara);
-}
+});
 
 function find_tovar(tovar) {
   // [{name: "dress", size:"L"}]

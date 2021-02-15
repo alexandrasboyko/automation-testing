@@ -12,7 +12,6 @@ function add_ed_tovara (ed_tovara){
      console.log("товар добавлен");
      return arr_of_clos.push(ed_tovara)}
      else throw new Error `свойство не состветсвует допустимым`
-
 }
 
 function find_ed_tovara (ed_tovara){
@@ -51,3 +50,5 @@ console.log(find_ed_tovara({name:'T-Short'}));
 console.log(find_tovarS({ size: "L", price: 1000 }));
 
 add_ed_tovara({ size: "L", price: 1000, nameS: "Cap" });
+
+

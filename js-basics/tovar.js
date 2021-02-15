@@ -1,22 +1,35 @@
 const arr_tovarov = [
   { name: "cap", size: "m", price: 100 },
   { name: "cap", size: "s", price: 200 },
-  { name: "cap", size: "s", price: 100 },
+  { name: "cap", size: "s", price: 100, category:'women' },
   { name: "dress", size: "m", price: 100 },
 ];
 tovar_vved = { size: "s", price: 200 };
 tovar_properties = ["size", "price"];
 
-const find_tovar = arr_tovarov.filter(function (ed_tovara){
-    return tovar_properties.every(function (key){
-        console.log(`товар введенный - ${tovar_vved[key]} , товар из массива -  ${ed_tovara[key]}`)
+// const find_tovar = arr_tovarov.filter(function (ed_tovara){
+//     return tovar_properties.every(function (key){
+//         console.log(`товар введенный - ${tovar_vved[key]} , товар из массива -  ${ed_tovara[key]}`)
 
-        console.log(tovar_vved[key]===ed_tovara[key])
-    return tovar_vved[key]===ed_tovara[key]
+//         console.log(tovar_vved[key]===ed_tovara[key])
+//     return tovar_vved[key]===ed_tovara[key]
+//     })
+
+// })
+// console.log(find_tovar)
+
+function tovar_category (category) {
+    const tovar = arr_tovarov.filter (function (el_tovara){
+        return el_tovara.category === category }).map(function 
+            ({category, ...ost}) {
+        return ost
     })
+}
+console.log(tovar_category({ name: "cap", category:'women'}))
 
-})
-console.log(find_tovar)
+
+
+
 
 // function add_ed_tovara(ed_tovara) {
 //   const keys = Object.keys(ed_tovara) //[name, size, price, m]
@@ -40,6 +53,4 @@ console.log(find_tovar)
 // }
 // add_ed_tovara({ name: "boots", size: 39, price: 100});
 // console.log(arr_tovarov)  
-
-
 
