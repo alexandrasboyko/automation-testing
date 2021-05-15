@@ -41,15 +41,6 @@ function find_tovar(ed_tovara) {
     else { 'товар не найден'}
 }
 
-function find_category (category){
-    
-}
-
-    
-
-
-    
-
 // }
 //add_new_tovar({ size: "XL", price: 1000, name: "Dress" });
 add_new_tovar({ PLUSize: "XL", price: 1000, name: "Dress" });

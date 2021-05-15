@@ -25,7 +25,7 @@ function tovar_category (category) {
         return ost
     })
 }
-console.log(tovar_category({ name: "cap", category:'women'}))
+console.log(tovar_category({ name: "cap"} , {category:'women'}))
 
 
 
