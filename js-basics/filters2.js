@@ -25,8 +25,6 @@ function find_ed_tovara(ed_tovara) {
   });
 
   const founded_tovar = shop[category].splice(index, 1)[0];
- 
-  
 
   return {
     sell: function () {
