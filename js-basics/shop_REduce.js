@@ -17,12 +17,39 @@ function add_new_ed_tovara(ed_tovara) {
   }
   shop[category].push(rest);
 }
-add_new_ed_tovara({category:"dress", size:"XS", price:"500"})
-add_new_ed_tovara({category:"skirt", size:"S", price:"600"})
-add_new_ed_tovara({category:"jeans", size:"M", price:"700"})
-add_new_ed_tovara({category:"dress", size:"L", price:"800"})
-console.log("shop", shop)
+add_new_ed_tovara({ category: "dress", size: "XS", price: 500 });
+add_new_ed_tovara({ category: "skirt", size: "S", price: 600 });
+add_new_ed_tovara({ category: "jeans", size: "M", price: 700 });
+add_new_ed_tovara({ category: "dress", size: "L", price: 800 });
+console.log("shop", shop);
 
+function get_kassa_for_each_category() {
+  const categories_keys = Object.keys(shop);
+  const new_obj = {};
+  categories_keys.forEach(function (category) {
+    const kassa_from_categories = shop[category].reduce(function (
+      kassa,
+      element
+    ) {
+      return (kassa+element.price);
+    },
+    0);
+    new_obj[category] = kassa_from_categories;
+  });
+  return new_obj;
+}
+const s = get_kassa_for_each_category();
+console.log(s);
+
+function get_full_kassa(new_obj) {
+  const keys_of_new_obj = Object.keys(shop);
+  const full_kassa = keys_of_new_obj.reduce(function (kassa, category) {
+    return kassa + new_obj[category];
+  }, 0);
+  return full_kassa;
+}
+console.log("get_full_kassa ->");
+console.log(get_full_kassa(s));
 
 function add_new_staff(new_person) {
   const { category, ...rest } = new_person;
